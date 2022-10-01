@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+
+    int num;
+
+    printf("Enter an integer: ");
+
+    scanf("%d", &num);
+
+    // true if num is perfectly divisible by 2
+
+    if(num % 2 == 0)
+
+        printf("%d is even.", num);
+
+    else
+
+        printf("%d is odd.", num);
+
+#include<stdio.h>
+
+int main()
+
+{
+
+    int num, even;
+
+    int *ptr;
+
+    ptr = &num;
+
+    printf("Enter number: ");
+
+    scanf("%d",ptr); //ptr has address of num
+
+    even = *ptr%2;
+
+    if(even == 0){
+
+        printf("%d is even.\n", *ptr);
+
+    }
+
+    else{
+
+        printf("%d is odd.\n", *ptr);
+
+    }
+
+    return 0;
+
+}
